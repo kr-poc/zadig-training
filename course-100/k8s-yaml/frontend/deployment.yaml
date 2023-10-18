@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: frontend
+  name: frontend-rc-origin
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+      - image: koderover.tencentcloudcr.com/koderover-demo/frontend:latest
+        name: frontend
+        ports:
+        - containerPort: 80
+          name: frontend
+        resources:
+          limits:
+            memory: 60Mi
+            cpu: 60m
