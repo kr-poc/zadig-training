@@ -42,7 +42,7 @@ export default {
   },
   mounted() {
     axios
-      .get('/api/buildstamp')
+      .get('/v1/buildstamp')
       .then(response => (this.buildstamp = response))
   }
 }
