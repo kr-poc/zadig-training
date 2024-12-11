@@ -4,7 +4,7 @@
     <h2>{{ description }} </h2>
     <ul>
       <li>
-        前端构建时间： 2021-07-08.11:03:25
+        前端构建时间： hyperVersion
       </li>
     </ul>
     <ul>
