@@ -26,7 +26,7 @@ var BuildStamp = "No Build Stamp Provided"
 
 func hello(w http.ResponseWriter, req *http.Request) {
 
-	fmt.Fprintf(w, "You konw ZadigX is awesome ~~\n")
+	fmt.Fprintf(w, "You know Zadig is awesome ~~\n")
 }
 
 func headers(w http.ResponseWriter, req *http.Request) {
@@ -45,7 +45,7 @@ func buildStamp(w http.ResponseWriter, req *http.Request) {
 
 func main() {
 
-	log.Println("Backend service is running Good! ZadigX here to help you~~~")
+	log.Println("Backend service is running Good! Zadig here to help you~~~")
 
 	http.HandleFunc("/", hello)
 	http.HandleFunc("/api/buildstamp", buildStamp)
