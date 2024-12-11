@@ -35,7 +35,7 @@ export default {
   name: 'HelloWorld',
   data() {
     return {
-      msg: '欢迎来到 ZadigX 新手快速入门课程 T100',
+      msg: '欢迎来到 Zadig 新手快速入门教程 T100',
       description: '前端采用 Vue.js 实现，后端采用 Golang 实现',
       buildstamp: ""
     }
